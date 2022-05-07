@@ -1,1 +1,6 @@
 (?<=<a.*?\n*?.*?href=['"]).+?(?=['"])
+
+let i=0;
+ for (let link of document.links) {
+ i++;
+console.log(i, link.href) }
